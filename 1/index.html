@@ -6,13 +6,19 @@
   <title>مرصد تدفقات السيولة في السوق السعودي (تداول) | مرصد الرياض</title>
   <meta name="description" content="مرصد إحصائي مستقل لتدفقات السيولة ومستويات الارتكاز في السوق السعودي (تداول)، لأغراض الدراسة والبحث والاطلاع.">
   <meta name="theme-color" content="#022c1b">
-  <!-- Google Ads measurement -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18450411963"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18450562699"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-18450411963');
+
+    gtag('config', 'AW-18450562699');
+  </script>
+
+  <!-- Event snippet for 出站点击 conversion page -->
+  <script>
     function gtag_report_conversion(url) {
       var callbackCalled = false;
       var callback = function () {
@@ -23,13 +29,15 @@
         }
       };
       gtag('event', 'conversion', {
-        'send_to': 'AW-18450411963/X23uCOKu1vkcELvj691E',
-        'event_callback': callback
+          'send_to': 'AW-18450562699/67JdCNjemvwcEIv99N1E',
+          'event_callback': callback
       });
+      // 1.2 秒防阻塞安全降级机制
       window.setTimeout(callback, 1200);
       return false;
     }
   </script>
+
   <style>
     :root {
       --ink: #062419;
